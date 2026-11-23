@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherNow - City Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>WeatherNow</h1>
+      <p>City Weather Dashboard</p>
+    </header>
+
+    <form class="search-form" id="searchForm">
+      <label for="cityInput">Enter city name</label>
+      <div class="search-row">
+        <input type="text" id="cityInput" placeholder="e.g. Abuja, Lagos, Gombe" aria-label="Enter city name">
+        <button type="submit">Search</button>
+      </div>
+    </form>
+
+    <section class="current-card">
+      <div>
+        <h2 class="city-name">Abuja</h2>
+        <p class="condition">Sunny</p>
+      </div>
+      <div class="current-main">
+        <span class="current-icon">☀️</span>
+        <span class="current-temp">32°C</span>
+      </div>
+      <div class="current-details">
+        <p>Wind: <strong>12 km/h</strong></p>
+        <p>Humidity: <strong>45%</strong></p>
+        <p>Feels like: <strong>34°C</strong></p>
+      </div>
+    </section>
+
+    <h3 class="forecast-title">7-Day Forecast</h3>
+    <section class="forecast-row">
+      <article class="forecast-card"><p>Mon</p><span>☀️</span><p>32° / 24°</p></article>
+      <article class="forecast-card"><p>Tue</p><span>⛅</span><p>31° / 23°</p></article>
+      <article class="forecast-card"><p>Wed</p><span>🌧️</span><p>28° / 22°</p></article>
+      <article class="forecast-card"><p>Thu</p><span>🌧️</span><p>27° / 21°</p></article>
+      <article class="forecast-card"><p>Fri</p><span>☀️</span><p>31° / 23°</p></article>
+      <article class="forecast-card"><p>Sat</p><span>☀️</span><p>33° / 24°</p></article>
+      <article class="forecast-card"><p>Sun</p><span>⛅</span><p>30° / 23°</p></article>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
